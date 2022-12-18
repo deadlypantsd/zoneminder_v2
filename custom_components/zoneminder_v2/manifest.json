@@ -1,0 +1,11 @@
+{
+  "domain": "zoneminder_v2",
+  "name": "ZoneMinder v2",
+  "version": "0.0.1a",
+  "config_flow": true,
+  "documentation": "https://github.com/dmidthun/zoneminder_v2/documentation",
+  "requirements": ["pyzm==0.3.56"],
+  "codeowners": ["@dmidthun"],
+  "iot_class": "local_polling",
+  "loggers": ["zoneminder"]
+}
