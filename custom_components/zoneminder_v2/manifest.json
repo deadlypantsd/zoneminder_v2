@@ -4,7 +4,7 @@
   "version": "0.0.2",
   "config_flow": true,
   "documentation": "https://github.com/dmidthun/zoneminder_v2/documentation",
-  "requirements": ["pyzm==0.3.56"],
+  "requirements": ["pyzm"],
   "codeowners": ["@dmidthun"],
   "iot_class": "local_polling",
   "loggers": ["zoneminder"]

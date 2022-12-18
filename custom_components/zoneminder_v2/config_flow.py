@@ -9,6 +9,10 @@ from homeassistant.const import (
     CONF_HOST,
     CONF_USERNAME,
     CONF_PASSWORD,
+    CONF_PATH,
+    CONF_PATH_ZMS,
+    CONF_SSL,
+    CONF_VERIFY_SSL,
 )
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
@@ -26,8 +30,15 @@ from .const import (
 DATA_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_HOST, default=DEFAULT_HOST): str,
-        vol.Optional(CONF_USERNAME): str,
-        vol.Optional(CONF_PASSWORD): str,
+        vol.Required(CONF_USERNAME): str,
+        vol.Required(CONF_PASSWORD): str,
+        vol.Required(CONF_PATH, default=DEFAULT_PATH): str,
+        vol.Required(CONF_PATH_ZMS, default=DEFAULT_PATH_ZMS): str,
+
+        vol.Optional(CONF_SSL, default=DEFAULT_SSL): str,
+        vol.Optional(CONF_VERIFY_SSL, default=DEFAULT_VERIFY_SSL): str,
+        
+
     }
 )
 
