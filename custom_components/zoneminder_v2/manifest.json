@@ -1,7 +1,7 @@
 {
   "domain": "zoneminder_v2",
   "name": "ZoneMinder v2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "config_flow": true,
   "documentation": "https://github.com/dmidthun/zoneminder_v2/documentation",
   "requirements": ["pyzm"],
