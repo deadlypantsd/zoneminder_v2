@@ -5,14 +5,18 @@ from typing import Any
 import voluptuous as vol
 
 from homeassistant import config_entries, exceptions
+from homeassistant.const import (
+    CONF_HOST,
+    CONF_USERNAME,
+    CONF_PASSWORD,
+    CONF_PORT,
+)
+
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
 
 from .const import (
     DOMAIN,
-    CONF_HOST,
-    CONF_USERNAME,
-    CONF_PASSWORD,
     CONF_PATH,
     CONF_PATH_ZMS,
     CONF_TIMEOUT,
@@ -22,6 +26,7 @@ from .const import (
     DEFAULT_HOST,
     DEFAULT_PATH,
     DEFAULT_PATH_ZMS,
+    DEFAULT_PORT,
     DEFAULT_TIMEOUT,
     DEFAULT_SSL,
     DEFAULT_VERIFY_SSL
@@ -34,7 +39,7 @@ DATA_SCHEMA = vol.Schema(
         vol.Required(CONF_PASSWORD): str,
         vol.Required(CONF_PATH, default=DEFAULT_PATH): str,
         vol.Required(CONF_PATH_ZMS, default=DEFAULT_PATH_ZMS): str,
-
+        vol.Required(CONF_PORT, default=DEFAULT_PORT): int,
         vol.Optional(CONF_SSL, default=DEFAULT_SSL): str,
         vol.Optional(CONF_VERIFY_SSL, default=DEFAULT_VERIFY_SSL): str,
         
