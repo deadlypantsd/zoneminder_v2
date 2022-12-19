@@ -19,9 +19,7 @@ from homeassistant.data_entry_flow import FlowResult
 
 from .const import (
     DOMAIN,
-    CONF_PATH,
     CONF_PATH_ZMS,
-
     DEFAULT_HOST,
     DEFAULT_PATH,
     DEFAULT_PATH_ZMS,
