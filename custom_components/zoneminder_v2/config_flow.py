@@ -7,20 +7,21 @@ import voluptuous as vol
 from homeassistant import config_entries, exceptions
 from homeassistant.const import (
     CONF_HOST,
-    CONF_USERNAME,
+    CONF_PATH,
     CONF_PASSWORD,
     CONF_PORT,
-    CONF_PATH,
+    CONF_SSL,
+    CONF_USERNAME,
+    CONF_VERIFY_SSL,
 )
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
 
 from .const import (
     DOMAIN,
+    CONF_PATH,
     CONF_PATH_ZMS,
-    CONF_SSL,
-    CONF_VERIFY_SSL,
-    
+
     DEFAULT_HOST,
     DEFAULT_PATH,
     DEFAULT_PATH_ZMS,
