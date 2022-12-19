@@ -10,16 +10,14 @@ from homeassistant.const import (
     CONF_USERNAME,
     CONF_PASSWORD,
     CONF_PORT,
+    CONF_PATH,
 )
-
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResult
 
 from .const import (
     DOMAIN,
-    CONF_PATH,
     CONF_PATH_ZMS,
-    CONF_TIMEOUT,
     CONF_SSL,
     CONF_VERIFY_SSL,
     
@@ -27,7 +25,6 @@ from .const import (
     DEFAULT_PATH,
     DEFAULT_PATH_ZMS,
     DEFAULT_PORT,
-    DEFAULT_TIMEOUT,
     DEFAULT_SSL,
     DEFAULT_VERIFY_SSL
 )

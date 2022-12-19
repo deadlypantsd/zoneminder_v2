@@ -4,8 +4,7 @@ import sys
 
 DOMAIN = "zoneminder_v2"
 
-CONF_PATH = "path"
-CONF_PATH_ZMS = "path/cgi-bin/nph-zms"
+CONF_PATH_ZMS = "path_zms"
 CONF_PORT = 80
 CONF_TIMEOUT = 10
 CONF_SSL = False
